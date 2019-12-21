@@ -1,0 +1,39 @@
+/////////////////////////////////////////////////////
+// author : Neelakanteswar Patnaik;
+/////////////////////////////////////////////////////
+
+//configuration styles
+@import "colors";
+@import "fonts";
+@import "breakpoints";
+
+
+// component styles
+@import "home";
+@import "cursor";
+
+body{
+  height: 100%;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  background-color: #111;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  // overflow: hidden;
+  // background: #4be9e3; /* Old browsers */
+  // background: -moz-linear-gradient(top, #4be9e3 0%, #4be9e3 36%, #4be9e3 36%, #4be9e3 36%, #4be9e3 36%, #27b7ac 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(top, #4be9e3 0%,#4be9e3 36%,#4be9e3 36%,#4be9e3 36%,#4be9e3 36%,#27b7ac 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(to bottom, #4be9e3 0%,#4be9e3 36%,#4be9e3 36%,#4be9e3 36%,#4be9e3 36%,#27b7ac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4be9e3', endColorstr='#27b7ac',GradientType=0 ); /* IE6-9 */
+  a{
+    outline: 0 !important;
+    text-decoration: none !important;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
