@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/contact.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/menu.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/cursor.css" />
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=NrTYvuK4VE8l4E7e7eTEtcOe"></script>
+		<script>
+			document.documentElement.className="js";
+			var supportsCssVars=function(){
+				var e,t=document.createElement("style");
+				return t.innerHTML="root: { --tmp-var: bold; }",
+				document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),
+				t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view the website in a modern browser that supports CSS Variables.");
+		</script>
+		<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=tEB2z1e0XNrVUs2bka1XwsIoRrlnpp6G"></script> -->
+
+	</head>
+	<body onload="bdGEO()" style="background:#000000;">
+		<div id="custom-cursor"></div>
+		<div id="custom-cursor-dot"></div>
+		<ul class="desktop_nav">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="about.html">关于</a></li>
+			<!-- <li><a href="projects.html">工程项目</a></li> -->
+			<li><a href="services.html">服务项目</a></li>
+			<li><a href="contact.html">联系我们</a></li>
+		</ul>
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+			<symbol id="icon-menu" viewBox="0 0 24 13">
+				<title>menu</title>
+				<path d="M.75 1.515h22.498a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5zM23.248 5.265H8.168a.75.75 0 0 0 0 1.5h15.08a.75.75 0 0 0 0-1.5zM23.248 10.514H4.322a.75.75 0 0 0 0 1.5h18.926a.75.75 0 0 0 0-1.5z"/>
+			</symbol>
+			<symbol id="icon-dot" viewBox="0 0 24 24">
+				<title>dot</title>
+				<path d="M11.5 9c-.69 0-1.28.244-1.768.732A2.41 2.41 0 0 0 9 11.5c0 .69.244 1.28.732 1.767A2.409 2.409 0 0 0 11.5 14c.69 0 1.28-.244 1.768-.733A2.408 2.408 0 0 0 14 11.5c0-.69-.244-1.28-.732-1.768A2.408 2.408 0 0 0 11.5 9z"/>
+			</symbol>
+			<symbol id="icon-cross" viewBox="0 0 24 24">
+				<title>cross</title>
+				<path d="M11.449 11.962l-5.1 5.099a.363.363 0 1 0 .513.512L12 12.436l5.137 5.137a.361.361 0 0 0 .513 0 .363.363 0 0 0 0-.512l-5.099-5.1 5.102-5.102a.363.363 0 1 0-.512-.513L12 11.487l-5.141-5.14a.363.363 0 0 0-.513.512l5.103 5.103z"/>
+			</symbol>
+			<symbol id="icon-arrowlong" viewBox="0 0 32 11">
+				<title>arrow-long</title>
+				<path d="M27.166.183a.619.619 0 0 0-.878 0 .619.619 0 0 0 0 .878l2.735 2.735H.768a.624.624 0 0 0 0 1.248h28.254L26.287 7.77a.619.619 0 0 0 0 .878.617.617 0 0 0 .441.183c.163 0 .32-.061.442-.183l3.796-3.796a.623.623 0 0 0-.005-.878L27.166.183z"/>
+			</symbol>
+			<symbol id="icon-close" viewBox="0 0 24 24">
+				<title>close</title>
+				<path d="M21 4.565L19.435 3 12 10.435 4.565 3 3 4.565 10.435 12 3 19.435 4.565 21 12 13.565 19.435 21 21 19.435 13.565 12z"/>
+			</symbol>
+			<symbol id="icon-navup" viewBox="0 0 50 50">
+				<title>navup</title>
+				<path d="M20.259 28.211l5.07-5.03 5.075 5.034a.36.36 0 0 0 .51 0 .356.356 0 0 0 0-.506l-5.323-5.28a.404.404 0 0 0-.135-.084.364.364 0 0 0-.384.08l-5.324 5.28a.356.356 0 0 0 0 .506c.141.14.37.14.51 0z" />
+			</symbol>
+			<symbol id="icon-navdown" viewBox="0 0 50 50">
+				<title>navdown</title>
+				<path d="M20.259 22.43l5.07 5.03 5.075-5.034a.36.36 0 0 1 .51 0c.14.14.14.366 0 .506l-5.323 5.28a.404.404 0 0 1-.135.084.364.364 0 0 1-.384-.081l-5.324-5.28a.356.356 0 0 1 0-.505c.141-.14.37-.14.51 0z" />
+			</symbol>
+			<symbol id="icon-grid" viewBox="0 0 24 24">
+				<title>grid</title>
+				<path d="M8.982 8.982h5.988v5.988H8.982zM0 0h5.988v5.988H0zM8.982 17.965h5.988v5.988H8.982zM0 8.982h5.988v5.988H0zM0 17.965h5.988v5.988H0zM17.965 0h5.988v5.988h-5.988zM8.982 0h5.988v5.988H8.982zM17.965 8.982h5.988v5.988h-5.988zM17.965 17.965h5.988v5.988h-5.988z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="sections">
+				<header class="sections__header">
+					<!-- <h1 class="title">服务项目</h1> -->
+
+					<div class="mobile_menu">
+					  <div class="main main--mobile_menu">
+					    <div class="content content--mobile_menu">
+					      <div class="hamburger js-hover">
+					        <div class="hamburger__line hamburger__line--01">
+					          <div class="hamburger__line-in hamburger__line-in--01"></div>
+					        </div>
+					        <div class="hamburger__line hamburger__line--02">
+					          <div class="hamburger__line-in hamburger__line-in--02"></div>
+					        </div>
+					        <div class="hamburger__line hamburger__line--03">
+					          <div class="hamburger__line-in hamburger__line-in--03"></div>
+					        </div>
+					        <div class="hamburger__line hamburger__line--cross01">
+					          <div class="hamburger__line-in hamburger__line-in--cross01"></div>
+					        </div>
+					        <div class="hamburger__line hamburger__line--cross02">
+					          <div class="hamburger__line-in hamburger__line-in--cross02"></div>
+					        </div>
+					      </div>
+					      <div class="global-menu">
+					        <div class="global-menu__wrap">
+					          <a class="global-menu__item global-menu__item--mobile_menu" href="#">首页</a>
+					          <a class="global-menu__item global-menu__item--mobile_menu" href="#">关于</a>
+					          <a class="global-menu__item global-menu__item--mobile_menu" href="#">工程项目</a>
+					          <a class="global-menu__item global-menu__item--mobile_menu" href="#">服务项目</a>
+					          <a class="global-menu__item global-menu__item--mobile_menu" href="#">联系我们</a>
+					        </div>
+					      </div>
+					      <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+					        <path class="shape-overlays__path"></path>
+					        <path class="shape-overlays__path"></path>
+					        <path class="shape-overlays__path"></path>
+					      </svg>
+					    </div>
+					  </div>
+					</div>
+				</header>
+
+				<section class="section section--current">
+					<div class="section__content">
+						<section class="contact-wrap">
+								<h1>Contact text</h1>
+						    <form action="" class="contact-form">
+						        <div class="col-sm-6">
+						            <div class="input-block">
+						                <label for="">First Name</label>
+						                <input class="form-control" type="text">
+						            </div>
+						        </div>
+						        <div class="col-sm-6">
+						            <div class="input-block">
+						                <label for="">Last Name</label>
+						                <input class="form-control" type="text">
+						            </div>
+						        </div>
+						        <div class="col-sm-12">
+						            <div class="input-block">
+						                <label for="">Email</label>
+						                <input class="form-control" type="text">
+						            </div>
+						        </div>
+						        <div class="col-sm-12">
+						            <div class="input-block">
+						                <label for="">Message Subject</label>
+						                <input class="form-control" type="text">
+						            </div>
+						        </div>
+						        <div class="col-sm-12">
+						            <div class="input-block textarea">
+						                <label for="">Drop your message here</label>
+						                <textarea rows="3" type="text" class="form-control"></textarea>
+						            </div>
+						        </div>
+						        <div class="col-sm-12">
+						            <button class="square-button">Send</button>
+						        </div>
+						    </form>
+						</section>
+					</div>
+					<div class="section__img">
+						<div id="map" class="map"></div>
+					</div>
+					<div class="section__more">
+						<div class="section__more-inner section__more-inner--bg1">
+							<img class="wechat_qrcode" src="./assets/images/wechat.png" alt="">
+						</div>
+					</div>
+					<div class="section__expander" style="color: #fff;text-align: center;padding: 3em;
+">
+						<div class="section__expander--content">
+							<p class="section__expander--text">四川宏达爆破工程有限公司</p>
+							<p class="section__expander--text"><span id="section__expander--bold-text">张 姐：</span> 18980530239</p>
+							<p class="section__expander--text"><span id="section__expander--bold-text">电 话：</span> 028-87683592</p>
+							<p class="section__expander--text"><span id="section__expander--bold-text">传 真：</span> 028-87668360</p>
+							<p class="section__expander--text"><span id="section__expander--bold-text">邮 编：</span> 610037</p>
+							<p class="section__expander--text"><span id="section__expander--bold-text">E-mail：</span> hongdabaopo@163.com</p>
+							<!-- <p class="section__expander--text"><span id="section__expander--bold-text">地址：</span> 成都市金牛区迎宾大道8号4栋604</p> -->
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</main>
+
+		<script src="./assets/js/menu.js"></script>
+		<script src="./assets/js/easings.js"></script>
+		<script src="./assets/js/contact.js"></script>
+		<script src="./assets/js/cursor.js"></script>
+	</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/about.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/menu.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/cursor.css" />
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+</head>
+
+  <body>
+
+    <div id="custom-cursor"></div>
+		<div id="custom-cursor-dot"></div>
+		<ul class="desktop_nav">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="about.html">关于</a></li>
+			<!-- <li><a href="projects.html">工程项目</a></li> -->
+			<li><a href="services.html">服务项目</a></li>
+			<li><a href="contact.html">联系我们</a></li>
+		</ul>
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+			<symbol id="icon-menu" viewBox="0 0 24 13">
+				<title>menu</title>
+				<path d="M.75 1.515h22.498a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5zM23.248 5.265H8.168a.75.75 0 0 0 0 1.5h15.08a.75.75 0 0 0 0-1.5zM23.248 10.514H4.322a.75.75 0 0 0 0 1.5h18.926a.75.75 0 0 0 0-1.5z"/>
+			</symbol>
+			<symbol id="icon-dot" viewBox="0 0 24 24">
+				<title>dot</title>
+				<path d="M11.5 9c-.69 0-1.28.244-1.768.732A2.41 2.41 0 0 0 9 11.5c0 .69.244 1.28.732 1.767A2.409 2.409 0 0 0 11.5 14c.69 0 1.28-.244 1.768-.733A2.408 2.408 0 0 0 14 11.5c0-.69-.244-1.28-.732-1.768A2.408 2.408 0 0 0 11.5 9z"/>
+			</symbol>
+			<symbol id="icon-cross" viewBox="0 0 24 24">
+				<title>cross</title>
+				<path d="M11.449 11.962l-5.1 5.099a.363.363 0 1 0 .513.512L12 12.436l5.137 5.137a.361.361 0 0 0 .513 0 .363.363 0 0 0 0-.512l-5.099-5.1 5.102-5.102a.363.363 0 1 0-.512-.513L12 11.487l-5.141-5.14a.363.363 0 0 0-.513.512l5.103 5.103z"/>
+			</symbol>
+			<symbol id="icon-arrowlong" viewBox="0 0 32 11">
+				<title>arrow-long</title>
+				<path d="M27.166.183a.619.619 0 0 0-.878 0 .619.619 0 0 0 0 .878l2.735 2.735H.768a.624.624 0 0 0 0 1.248h28.254L26.287 7.77a.619.619 0 0 0 0 .878.617.617 0 0 0 .441.183c.163 0 .32-.061.442-.183l3.796-3.796a.623.623 0 0 0-.005-.878L27.166.183z"/>
+			</symbol>
+			<symbol id="icon-close" viewBox="0 0 24 24">
+				<title>close</title>
+				<path d="M21 4.565L19.435 3 12 10.435 4.565 3 3 4.565 10.435 12 3 19.435 4.565 21 12 13.565 19.435 21 21 19.435 13.565 12z"/>
+			</symbol>
+			<symbol id="icon-navup" viewBox="0 0 50 50">
+				<title>navup</title>
+				<path d="M20.259 28.211l5.07-5.03 5.075 5.034a.36.36 0 0 0 .51 0 .356.356 0 0 0 0-.506l-5.323-5.28a.404.404 0 0 0-.135-.084.364.364 0 0 0-.384.08l-5.324 5.28a.356.356 0 0 0 0 .506c.141.14.37.14.51 0z" />
+			</symbol>
+			<symbol id="icon-navdown" viewBox="0 0 50 50">
+				<title>navdown</title>
+				<path d="M20.259 22.43l5.07 5.03 5.075-5.034a.36.36 0 0 1 .51 0c.14.14.14.366 0 .506l-5.323 5.28a.404.404 0 0 1-.135.084.364.364 0 0 1-.384-.081l-5.324-5.28a.356.356 0 0 1 0-.505c.141-.14.37-.14.51 0z" />
+			</symbol>
+			<symbol id="icon-grid" viewBox="0 0 24 24">
+				<title>grid</title>
+				<path d="M8.982 8.982h5.988v5.988H8.982zM0 0h5.988v5.988H0zM8.982 17.965h5.988v5.988H8.982zM0 8.982h5.988v5.988H0zM0 17.965h5.988v5.988H0zM17.965 0h5.988v5.988h-5.988zM8.982 0h5.988v5.988H8.982zM17.965 8.982h5.988v5.988h-5.988zM17.965 17.965h5.988v5.988h-5.988z"/>
+			</symbol>
+		</svg>
+
+    <div class="mobile_menu">
+      <div class="main main--mobile_menu">
+        <div class="content content--mobile_menu">
+          <div class="hamburger js-hover">
+            <div class="hamburger__line hamburger__line--01">
+              <div class="hamburger__line-in hamburger__line-in--01"></div>
+            </div>
+            <div class="hamburger__line hamburger__line--02">
+              <div class="hamburger__line-in hamburger__line-in--02"></div>
+            </div>
+            <div class="hamburger__line hamburger__line--03">
+              <div class="hamburger__line-in hamburger__line-in--03"></div>
+            </div>
+            <div class="hamburger__line hamburger__line--cross01">
+              <div class="hamburger__line-in hamburger__line-in--cross01"></div>
+            </div>
+            <div class="hamburger__line hamburger__line--cross02">
+              <div class="hamburger__line-in hamburger__line-in--cross02"></div>
+            </div>
+          </div>
+          <div class="global-menu">
+            <div class="global-menu__wrap">
+              <a class="global-menu__item global-menu__item--mobile_menu" href="#">首页</a>
+              <a class="global-menu__item global-menu__item--mobile_menu" href="#">关于</a>
+              <a class="global-menu__item global-menu__item--mobile_menu" href="#">工程项目</a>
+              <a class="global-menu__item global-menu__item--mobile_menu" href="#">服务项目</a>
+              <a class="global-menu__item global-menu__item--mobile_menu" href="#">联系我们</a>
+            </div>
+          </div>
+          <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path class="shape-overlays__path"></path>
+            <path class="shape-overlays__path"></path>
+            <path class="shape-overlays__path"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- menu -->
+    <nav class="menu">
+      <div class="menu__toggle">
+        <span class="menu__toggle-inner menu__toggle-inner--open">
+          <!-- <svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg> -->
+        </span>
+        <span class="menu__toggle-inner menu__toggle-inner--close">
+          <!-- <svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg> -->
+        </span>
+      </div>
+    </nav>
+
+    <div class="about_page">
+      <h1>公司简介</h1>
+      <span class="about_image">
+        <img src="./assets/images/5.jpg" alt="">
+      </span>
+      <p class="about-text">
+        <span>
+ 四川宏达爆破工程有限公司成立于2004年2月，注册资金2000万元，爆破与拆除工程专业承包壹级资质。公司法人代表宋国军。技术负责人曾庆福：高级工程师、高级爆破技术人员、中国工程爆破协会理事、四川省爆破协会常务理事、成都市公安局爆破专家组成员。公司下设宜宾市分公司、宜宾县分公司、南溪区分公司、乐山分公司、峨眉山分公司、仁寿分公司、金口河分公司、都江堰分公司、大邑分公司、西昌分公司、沙湾分公司、资阳分公司12个分公司，拥有成都市爆破专家组成员2名、高级工程师10名、工程师55名、技术人员60余名、高级爆破技术人员10名、安全生产管理人员10名，拥有一大批经验丰富的爆破员、库官员、押运员、安全员等约500名，拥有专业的固定设备、施工设备、测震设备以及其他设备等50余台。
+ </span>
+ <span>
+公司坚持“安全第一，预防为主，以人为本”的方针，按照国家《爆破安全规程》和当地公安机关的要求，在建立健全安全保障体系和安全风险防范体制的同时，高度重视新技术、新工艺的开发应用，大力加强企业文化的建设和优秀人才的培养，打造了一支“团结、高效、精干、进取”的员工队伍，因此自成立以来没有发生任何安全事故，赢得了业主的信任，受到了行业的一致好评，取得了骄人的成绩。
+先后顺利完成了成都市拓普14层办公大楼控制爆破拆除、阿坝州漩口水泥厂爆破拆除、威远钢厂大型厂房及基础的控制爆破拆除、乐山老客运中心11层大楼控制爆破拆除、成都报业集团楼房爆破拆除、虹波3万平方米厂房拆除、重庆腾辉特种水泥厂拆除、成都三电大厦11层大楼爆破拆除、成都华能热电厂210米烟囱及106米冷却塔定向爆破、嘉陵电厂210米烟囱及三座90米冷却塔定向爆破、白马电厂106米冷却塔定向爆破等工程200余项，拆除面积约300万平米，土石方工程量5000万立方米以上。树立了“创优质工程，让业主满意”的公司形象。特别是“5.12”汶川大地震发生后，公司总经理曾庆福决定以最快速度投入到抗震救灾的第一线，在抗争救灾第一线建立抗震救灾指挥部，快速高效的进行排危抢险工作，有力的支援灾区抢险工作。先后抢救出一批又一批受灾群众在废墟中的财产，清理出部分罹难者遗体，震后2个月内排危爆破拆除水塔、烟囱60余根、爆破与机械拆除危房30万平方米以上。公司受到都江堰市、崇州市等抗震救灾指挥部、企事业单位的高度评价和赞扬，并被成都市公安局评为‘抗震抢险先进单位’。树立了“抗震救灾、无私援助”的公司形象。
+</span>
+
+<span>
+    公司组织机构设计科学合理，责任到人，分工明确，能较好地满足公司正常经营和良好的发展。公司经营以诚信为本，获得成都市的“重合同守信用企业”、“AAA守法诚信单位”、“质量安全达标示范企业”。公司以最大限度的满足业主的需要为己任，精心组织项目实施，严格管理，安全生产，保证质量，力创精品。公司坚持以“创优质工程，让业主满意”为指南，做到了优质、安全、文明施工，取得了良好的社会信誉和经济效益，目前已发展壮大成规模化的爆破公司。
+新的机遇迎来新的挑战，永远向上的宏达人坚持以科学的管理、精湛的技术、高超的施工水平和各建设单位、业主一起共创明天的辉煌。我们期待能同新老客户一起为加深彼此的友谊而京城合作，为实现双赢的目标而努力奋斗！
+        </span>
+      </p>
+    </div>
+
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/easings.js"></script>
+    <script src="./assets/js/cursor.js"></script>
+  </body>
+</html>

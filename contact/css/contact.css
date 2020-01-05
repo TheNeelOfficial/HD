@@ -1,0 +1,49 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.BMap_Marker {
+  background: none;
+}
+
+.BMap_Marker > img {
+  display: none;
+}
+
+
+.contact-wrap{
+  width: 100%;
+  padding: 0 1em;
+  margin-top: -100px;
+}
+.input-block label{
+  padding: 1em 0;
+}
+
+.input-block input, .input-block textarea{
+  background: #000000;
+  border-style: none;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 0px;
+}
+
+.input-block input:focus, .input-block textarea:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.square-button{
+  width: 20%;
+  float: right;
+  padding: 1em;
+  margin: 2em 0;
+  background: #ffffff;
+  color: #555555;
+}

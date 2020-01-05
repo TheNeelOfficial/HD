@@ -37,6 +37,9 @@ h1 {
   text-align: center;
   padding: 1em;
   @include device('tablet'){
+    font-size: 2em;
+  };
+  @include device('laptop'){
     font-size: 3.5em;
   };
 }
@@ -112,10 +115,10 @@ h1.transition-in [class^="letter"] {
   opacity: 1;
 }
 
-.menu{
+.homescreen_menu{
   list-style: none;
   width: 100%;
-  z-index: 10000;
+  z-index: 1000;
   position: fixed;
   top: 70%;
   transform: translateY(-50%);
@@ -125,7 +128,7 @@ h1.transition-in [class^="letter"] {
     padding: 2em;
     font: 1.2em $roboto;
     font-weight: 100;
-    @include device('tablet'){
+    @include device('laptop'){
       display: inline;
     };
     a{

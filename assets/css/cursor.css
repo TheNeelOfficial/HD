@@ -1,0 +1,34 @@
+body {
+  user-select: none;
+}
+
+* {
+  cursor: none;
+}
+
+#custom-cursor {
+  position: absolute;
+  z-index: 100000000000000000000000000;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  will-change: top, left;
+  backface-visibility: hidden;
+  transition: all 0s ease, transform 0.2s ease 0s;
+  pointer-events: none;
+  display: none;
+}
+@media (min-width: 992px) {
+  #custom-cursor{
+    display: block;
+  }
+}
+#custom-cursor.hovering-link {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%) scale(5, 5);
+}
+#custom-cursor-dot.hovering-link {
+  opacity: 0;
+}
