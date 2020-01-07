@@ -351,6 +351,11 @@ button:focus {
 	align-items: stretch;
 	overflow: hidden;
 }
+@media (max-width: 800px) {
+  .section__more {
+    display: inline-block;
+  }
+}
 
 .wechat_qrcode{
 	width: 60%;
